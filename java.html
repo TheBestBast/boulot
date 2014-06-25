@@ -1,0 +1,44 @@
+<html>
+<head><meta charset="UTF-8"/></head>
+<body><script>
+
+var h2 = 24;
+var m2 = 95;
+var s2 = -15;
+
+var secplus = s2%60;
+var minaraj = (s2-secplus)/60;
+var mintot = minaraj + m2;
+var minplus = mintot%60;
+var haraj = (mintot-minplus)/60;
+var htot = h2 + haraj;
+var hdisplay = htot%24;
+
+if(secplus<0){secplus=60+secplus;minplus=minplus+secplus};
+if(minplus<0){hdisplay=hdisplay+minplus}
+if(h2>=18 && m2>=00) {
+document.write("bonsoir");
+
+ } else {document.write("bonjour");
+ 
+ 
+ 
+ }
+
+document.write(hdisplay+"H"+minplus+"M"+secplus);
+
+/*
+var a = 97;
+var b = parseInt("3");
+var d = 105;
+var c = b+(a+d);
+document.write(c);*/
+
+/*
+var swerty = 36; document.write(swerty); document.write("<br/>") ; swerty = 5; swerty = 6;
+var vari = "nom"; document.write("<p style=\"color:#ff6200\">test</p>");
+var prenom = "josé"; prenom = "dominique" ; prenom = "Maité";
+document.write("<p>Bonjour "+prenom+"</p>");
+document.write(swerty);*/
+</script></body>
+</html>
